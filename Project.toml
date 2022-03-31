@@ -3,8 +3,12 @@ uuid = "1b112299-d6bc-44e2-912a-478f25731460"
 authors = ["Thomas A. Christensen II <25492070+MillironX@users.noreply.github.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
+
 [compat]
 julia = "1.6"
+EzXML = "1.1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
