@@ -1,0 +1,16 @@
+# Kelpie
+
+[![Stable](https://img.shields.io/badge/docs-stable-blue.svg)](https://MillironX.github.io/Kelpie.jl/stable)
+[![Dev](https://img.shields.io/badge/docs-dev-blue.svg)](https://MillironX.github.io/Kelpie.jl/dev)
+[![Build Status](https://github.com/MillironX/Kelpie.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/MillironX/Kelpie.jl/actions/workflows/CI.yml?query=branch%3Amaster)
+[![Build Status](https://github.com/MillironX/Kelpie.jl/badges/master/pipeline.svg)](https://github.com/MillironX/Kelpie.jl/pipelines)
+[![Coverage](https://github.com/MillironX/Kelpie.jl/badges/master/coverage.svg)](https://github.com/MillironX/Kelpie.jl/commits/master)
+[![Build Status](https://travis-ci.com/MillironX/Kelpie.jl.svg?branch=master)](https://travis-ci.com/MillironX/Kelpie.jl)
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/MillironX/Kelpie.jl?svg=true)](https://ci.appveyor.com/project/MillironX/Kelpie-jl)
+[![Build Status](https://cloud.drone.io/api/badges/MillironX/Kelpie.jl/status.svg)](https://cloud.drone.io/MillironX/Kelpie.jl)
+[![Build Status](https://api.cirrus-ci.com/github/MillironX/Kelpie.jl.svg)](https://cirrus-ci.com/github/MillironX/Kelpie.jl)
+[![Coverage](https://codecov.io/gh/MillironX/Kelpie.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/MillironX/Kelpie.jl)
+[![Coverage](https://coveralls.io/repos/github/MillironX/Kelpie.jl/badge.svg?branch=master)](https://coveralls.io/github/MillironX/Kelpie.jl?branch=master)
+[![Code Style: Blue](https://img.shields.io/badge/code%20style-blue-4495d1.svg)](https://github.com/invenia/BlueStyle)
+[![ColPrac: Contributor's Guide on Collaborative Practices for Community Packages](https://img.shields.io/badge/ColPrac-Contributor's%20Guide-blueviolet)](https://github.com/SciML/ColPrac)
+[![PkgEval](https://JuliaCI.github.io/NanosoldierReports/pkgeval_badges/K/Kelpie.svg)](https://JuliaCI.github.io/NanosoldierReports/pkgeval_badges/report.html)
