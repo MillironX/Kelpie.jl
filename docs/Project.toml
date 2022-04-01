@@ -1,3 +1,4 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 Kelpie = "1b112299-d6bc-44e2-912a-478f25731460"
