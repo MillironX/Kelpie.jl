@@ -2,6 +2,8 @@ module Kelpie
 
 import EzXML: link!, EzXML
 
+
+export html
 export html_element
 
 """
@@ -73,6 +75,17 @@ function html_element(name::AbstractString, content=nothing; kwargs...)
     end #if
 
     return el
+end #function
+
+"""
+    html(content)
+
+Creates a new HTML document filled with `content`.
+"""
+function html(content)
+    doc = EzXML.HTMLDocumentNode(nothing, nothing)
+    link_or_text!(doc, content)
+    return doc
 end #function
 
 end #module
