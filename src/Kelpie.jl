@@ -6,6 +6,60 @@ import EzXML: link!, EzXML
 export html
 export html_element
 
+const HTML_ELEMENTS = [
+    :head,
+    :link,
+    :meta,
+    :style,
+    :title,
+    :body,
+    :article,
+    :aside,
+    :footer,
+    :header,
+    :h1,
+    :h2,
+    :h3,
+    :h4,
+    :h5,
+    :h6,
+    :main,
+    :nav,
+    :section,
+    :blockquote,
+    :dd,
+    # :div, Special case: we don't want to override the Base.div function
+    :dl,
+    :dt,
+    :hr,
+    :li,
+    :ol,
+    :p,
+    :ul,
+    :a,
+    :b,
+    :br,
+    :code,
+    :em,
+    :i,
+    :span,
+    :strong,
+    :sub,
+    :sup,
+    :u,
+    :img,
+    :iframe,
+    :script,
+    :table,
+    :tbody,
+    :td,
+    :tfoot,
+    :th,
+    :thead,
+    :tr,
+    :button,
+]
+
 """
     link_or_text!(node, content)
 
@@ -87,5 +141,15 @@ function html(content)
     link_or_text!(doc, content)
     return doc
 end #function
+
+for symbol in HTML_ELEMENTS
+    name = string(symbol)
+
+    @eval function $symbol(content=nothing; kwargs...)
+        return html_element($name, content; kwargs...)
+    end #function
+
+    @eval export $symbol
+end
 
 end #module
