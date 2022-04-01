@@ -2,6 +2,8 @@ module Kelpie
 
 import EzXML: link!, EzXML
 
+export html_element
+
 """
     link_or_text!(node, content)
 
@@ -39,6 +41,38 @@ function link_or_text!(node, content::AbstractArray)
     end #for
 
     return node
+end #function
+
+"""
+    html_element(name, content=nothing; kwargs...)
+
+Creates a new `EzXML.Node` with name `name`, containing `content`, and with attributes
+specified by `kwargs`.
+
+# Example
+
+```
+julia> import EzXML: prettyprint
+
+julia> prettyprint(html_element("img"; src="https://millironx.com/images/charolette.jpg"))
+<img src="https://millironx.com/images/charolette.jpg"/>
+
+julia> prettyprint(html_element("span", "MillironX"; class="label-primary"))
+<span class="label-primary">MillironX</span>
+```
+"""
+function html_element(name::AbstractString, content=nothing; kwargs...)
+    el = EzXML.ElementNode(name)
+
+    for (key, value) in kwargs
+        link!(el, EzXML.AttributeNode(replace(string(key), "_" => "-"), string(value)))
+    end #for
+
+    if !isnothing(content)
+        link_or_text!(el, content)
+    end #if
+
+    return el
 end #function
 
 end #module
