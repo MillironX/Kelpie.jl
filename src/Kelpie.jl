@@ -2,8 +2,8 @@ module Kelpie
 
 import EzXML: link!, EzXML
 
-
 export html
+export html_div
 export html_element
 
 const HTML_ELEMENTS = [
@@ -151,5 +151,9 @@ for symbol in HTML_ELEMENTS
 
     @eval export $symbol
 end
+
+function html_div(content=nothing; kwargs...)
+    return html_element("div", content; kwargs...)
+end #function
 
 end #module
