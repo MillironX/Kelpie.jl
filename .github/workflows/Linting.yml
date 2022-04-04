@@ -1,0 +1,48 @@
+name: Lint Code Base
+on:
+  push:
+  pull_request:
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - run: npm install -g markdownlint-cli
+      - run: markdownlint ${GITHUB_WORKSPACE}
+
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "16"
+      - run: npm install -g prettier@2
+      - run: prettier --check ${GITHUB_WORKSPACE}
+
+  spelling:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: streetsidesoftware/cspell-action@v1
+        with:
+          incremental_files_only: false
+          inline: error
+
+  julia-formatter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: "1"
+      - run: julia -e 'using Pkg; Pkg.add("JuliaFormatter")'
+      - run: |
+          julia -e '
+            using JuliaFormatter
+            exit(Int(!format("."; verbose=true, overwrite=false)))
+          '
