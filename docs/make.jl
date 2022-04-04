@@ -13,12 +13,7 @@ makedocs(;
         canonical="https://MillironX.github.io/Kelpie.jl",
         assets=String[],
     ),
-    pages=[
-        "Home" => "index.md",
-    ],
+    pages=["Home" => "index.md"],
 )
 
-deploydocs(;
-    repo="github.com/MillironX/Kelpie.jl",
-    devbranch="master",
-)
+deploydocs(; repo="github.com/MillironX/Kelpie.jl", devbranch="master")
