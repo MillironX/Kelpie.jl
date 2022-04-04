@@ -1,0 +1,57 @@
+name: Feature Request
+description: A new idea to make Kelpie even more robust
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > _Thanks for adding fresh ideas to Kelpie!_ :smile:
+        > _This template is rather extensive. Please fill out all that you can,_
+        > _but remember that it is only a tool: if you feel anything is not_
+        > _relevant, simply leave it blank._
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Give a clear and concise description of what you want
+  - type: textarea
+    id: function
+    attributes:
+      label: New Function(s)
+      description: |
+        Explain the signature and output of a new API function, in a similar
+        style to that of
+        [Julia docstrings](https://github.com/invenia/BlueStyle#documentation)
+      render: Markdown
+  - type: textarea
+    id: usage
+    attributes:
+      label: Example Usage
+      description: |
+        Provide a minimum working example of how this feature would work
+      render: Julia
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: |
+        Tell us what you are trying to accomplish and/or how this feature would
+        affect users in the "real world"
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: |
+        Explain what you're doing now, or if any other tools/packages come close
+        to this feature
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Possible Implementation
+      description: |
+        _Optional, but highly useful_
+
+        If you can figure out a good entry point in the code, or have a
+        one-liner that could be a good starting place, list it here. Even
+        better, if you know a way to implement it, explain that here.
