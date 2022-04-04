@@ -80,5 +80,9 @@ Turns into
 
 Everything is pure Julia, so your imagination is the limit!
 
-[^1]: Exception: `div` is the division function, and I wanted to leave it that
+[^1]:
+    Exception: `div` is the division function, and I wanted to leave it that
     way. To make `<div>`s, you need to use `html_div`.
+
+[julia repl]: https://docs.julialang.org/en/v1/manual/getting-started/
+[pkg mode]: https://docs.julialang.org/en/v1/stdlib/Pkg/
