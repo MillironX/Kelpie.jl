@@ -7,9 +7,7 @@ body:
     attributes:
       value: |
         > _Thanks for adding fresh ideas to Kelpie!_ :smile:
-        > _This template is rather extensive. Please fill out all that you can,_
-        > _but remember that it is only a tool: if you feel anything is not_
-        > _relevant, simply leave it blank._
+        > _This template is rather extensive. Please fill out all that you can, but remember that it is only a tool: if you feel anything is not relevant, simply leave it blank._
   - type: textarea
     id: summary
     attributes:
@@ -20,9 +18,7 @@ body:
     attributes:
       label: New Function(s)
       description: |
-        Explain the signature and output of a new API function, in a similar
-        style to that of
-        [Julia docstrings](https://github.com/invenia/BlueStyle#documentation)
+        Explain the signature and output of a new API function, in a similar style to that of [Julia docstrings](https://github.com/invenia/BlueStyle#documentation)
       render: Markdown
   - type: textarea
     id: usage
@@ -36,15 +32,13 @@ body:
     attributes:
       label: Context
       description: |
-        Tell us what you are trying to accomplish and/or how this feature would
-        affect users in the "real world"
+        Tell us what you are trying to accomplish and/or how this feature would affect users in the "real world"
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives
       description: |
-        Explain what you're doing now, or if any other tools/packages come close
-        to this feature
+        Explain what you're doing now, or if any other tools/packages come close to this feature
   - type: textarea
     id: implementation
     attributes:
@@ -52,6 +46,4 @@ body:
       description: |
         _Optional, but highly useful_
 
-        If you can figure out a good entry point in the code, or have a
-        one-liner that could be a good starting place, list it here. Even
-        better, if you know a way to implement it, explain that here.
+        If you can figure out a good entry point in the code, or have a one-liner that could be a good starting place, list it here. Even better, if you know a way to implement it, explain that here.

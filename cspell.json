@@ -1,9 +1,5 @@
 {
-    "language": "en",
-    "version": "0.2",
-    "words": [
-        "autodocs",
-        "Milliron",
-        "templating"
-    ]
+  "language": "en",
+  "version": "0.2",
+  "words": ["autodocs", "Milliron", "templating"]
 }

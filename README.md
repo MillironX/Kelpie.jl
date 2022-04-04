@@ -70,7 +70,7 @@ Turns into
     <h2>Julia is cool</h2>
   </header>
   <main>
-    <img src="/kelpie-on-sheep-back.jpg" alt="A Kelpie herding sheep"/>
+    <img src="/kelpie-on-sheep-back.jpg" alt="A Kelpie herding sheep" />
     <p>Kelpies make great herding dogs for cows.</p>
     <p>Kelpies make great herding dogs for sheep.</p>
     <p>Kelpies make great herding dogs for chickens.</p>

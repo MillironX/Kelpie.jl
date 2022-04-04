@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "julialang.language-julia",
-        "streetsidesoftware.code-spell-checker",
-        "DavidAnson.vscode-markdownlint"
-    ]
+  "recommendations": [
+    "julialang.language-julia",
+    "streetsidesoftware.code-spell-checker",
+    "DavidAnson.vscode-markdownlint"
+  ]
 }

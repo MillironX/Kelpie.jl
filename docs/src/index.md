@@ -1,4 +1,5 @@
 <!-- markdownlint-disable first-line-heading -->
+
 ```@meta
 CurrentModule = Kelpie
 ```
@@ -8,6 +9,7 @@ CurrentModule = Kelpie
 Documentation for [Kelpie](https://github.com/MillironX/Kelpie.jl).
 
 ```@index
+
 ```
 
 ```@autodocs
