@@ -1,0 +1,81 @@
+name: Bug Report
+description: Something isn't working like it's supposed to
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > _Thanks for helping squash bugs in Kelpie!_ :smile:
+        > _This template is rather extensive._
+        > _Please fill out all that you can, but remember that this template_
+        > _is only a tool: if you feel that anything is not relevant, simply_
+        > _leave it blank._
+  - type: markdown
+    attributes:
+      value: |
+        ## Behavior
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: Tell us what you expected to happen
+      placeholder: "It should just work!"
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Behavior
+      description: Tell us what actually happened
+      placeholder: "A bug happened!"
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Steps to Reproduce
+  - type: textarea
+    id: steps
+    attributes:
+      label: REPL command that causes bug
+      description: |
+        Enter the Julia code used to produce the bug in the REPL without prompt
+        or output
+      placeholder: |
+        using Kelpie
+        html_element(my_content)
+      render: Julia
+  - type: markdown
+    attributes:
+      value: |
+        ## More Info
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: |
+        Tell us what you are trying to accomplish and/or how this bug affects
+        users in the "real world."
+  - type: textarea
+    id: solution
+    attributes:
+      label: Possible Solution
+      description: |
+        **(Highly optional, but highly useful.)**
+        If you can figure out a design decision or a particular function call
+        that is causing the bug, explain here.
+        Even better, if you know a way to fix it, but don't want to open a pull
+        request, then explain the fix here.
+  - type: markdown
+    attributes:
+      value: |
+        ## Environment
+  - type: input
+    attributes:
+      label: OS and version
+      placeholder: "Fedora 34"
+  - type: input
+    attributes:
+      label: Kelpie version
+      placeholder: "0.0.1"
