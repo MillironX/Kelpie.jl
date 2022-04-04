@@ -1,5 +1,14 @@
 {
   "language": "en",
   "version": "0.2",
-  "words": ["autodocs", "Milliron", "templating"]
+  "words": [
+    "autodocs",
+    "Compat",
+    "COMPATHELPER",
+    "docstrings",
+    "markdownlint",
+    "Milliron",
+    "runtests",
+    "templating"
+  ]
 }
