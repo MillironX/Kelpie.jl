@@ -131,7 +131,7 @@ end #function
 Creates a new HTML document filled with `content`.
 """
 function html(content...)
-    doc = EzXML.HTMLDocumentNode(nothing, nothing)
+    doc = EzXML.HTMLDocumentNode("about:legacy-compat", nothing)
     link_or_text!(doc, content...)
     return doc
 end #function
