@@ -83,10 +83,12 @@ julia> prettyprint(link_or_text!(ElementNode("div"), "The end", ElementNode("hr"
 """
 function link_or_text!(node, content...)
     for con in content
-        if typeof(con) <: EzXML.Node
-            link!(node, con)
-        else
-            link!(node, EzXML.TextNode(string(con)))
+        if !isnothing(con)
+            if typeof(con) <: EzXML.Node
+                link!(node, con)
+            else
+                link!(node, EzXML.TextNode(string(con)))
+            end #if
         end #if
     end #for
 
@@ -126,13 +128,25 @@ function html_element(name::AbstractString, content...=nothing; kwargs...)
 end #function
 
 """
-    html(content...)
+    html(content...=nothing; kwargs...)
 
 Creates a new HTML document filled with `content`.
+
+# Example
+
+```jldoctest
+julia> import EzXML: prettyprint
+
+julia> prettyprint(html())
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html/>
+```
 """
-function html(content...)
-    doc = EzXML.HTMLDocumentNode(nothing, nothing)
-    link_or_text!(doc, content...)
+function html(content...=nothing; kwargs...)
+    doc = EzXML.HTMLDocumentNode("about:legacy-compat", nothing)
+    node = html_element("html", content...; kwargs...)
+    link!(doc, node)
     return doc
 end #function
 

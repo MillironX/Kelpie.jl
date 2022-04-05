@@ -60,22 +60,24 @@ Turns into
 
 ```html
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<head>
-  <title>Kelpie.jl is awesome!</title>
-</head>
-<body>
-  <header>
-    <h1>Dogs are cool</h1>
-    <h2>Julia is cool</h2>
-  </header>
-  <main>
-    <img src="/kelpie-on-sheep-back.jpg" alt="A Kelpie herding sheep" />
-    <p>Kelpies make great herding dogs for cows.</p>
-    <p>Kelpies make great herding dogs for sheep.</p>
-    <p>Kelpies make great herding dogs for chickens.</p>
-  </main>
-</body>
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html>
+  <head>
+    <title>Kelpie.jl is awesome!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Dogs are cool</h1>
+      <h2>Julia is cool</h2>
+    </header>
+    <main>
+      <img src="/kelpie-on-sheep-back.jpg" alt="A Kelpie herding sheep" />
+      <p>Kelpies make great herding dogs for cows.</p>
+      <p>Kelpies make great herding dogs for sheep.</p>
+      <p>Kelpies make great herding dogs for chickens.</p>
+    </main>
+  </body>
+</html>
 ```
 
 Everything is pure Julia, so your imagination is the limit!

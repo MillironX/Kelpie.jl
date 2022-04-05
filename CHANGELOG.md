@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Arrays of content replaced with argument splatting ([#2](https://github.com/MillironX/Kelpie.jl/pull/2))
 
+### Fixed
+
+- `html()` now returns an `<html>` node, not just a document ([#3](https://github.com/MillironX/Kelpie.jl/pull/3))
+
 ## [0.1.0] - 2022-04-04
 
 ### Added
