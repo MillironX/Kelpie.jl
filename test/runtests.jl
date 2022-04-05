@@ -7,6 +7,8 @@ using Test
 # Set up doctests
 DocMeta.setdocmeta!(Kelpie, :DocTestSetup, :(using Kelpie); recursive=true)
 
+prettystring(xml) = @capture_out prettyprint(xml)
+
 # Set up the Bootstrap 5.1.3 starter template in EzXML nodes
 function bootstrap_starter()
     # Create the nodes
@@ -76,7 +78,7 @@ function bootstrap_starter()
     link!(html_node, body_node)
     link!(doc_node, html_node)
 
-    return @capture_out prettyprint(doc_node)
+    return prettystring(doc_node)
 end #function
 
 # Set up the Zurb Foundation 6.7.4 starter template in EzXML nodes
@@ -163,7 +165,7 @@ function foundation_template()
     link!(html_node, body_node)
     link!(doc_node, html_node)
 
-    return @capture_out prettyprint(doc_node)
+    return prettystring(doc_node)
 end #function
 
 @testset "Kelpie.jl" begin
