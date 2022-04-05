@@ -31,16 +31,16 @@ Node.
 ```julia
 import EzXML: prettyprint
 
-doc = html([
-  head([
+doc = html(
+  head(
     title("Kelpie.jl is awesome!"),
-  ]),
-  body([
-    header([
+  ),
+  body(
+    header(
       h1("Dogs are cool"),
       h2("Julia is cool"),
-    ]),
-    main([
+    ),
+    main(
       img(;
         src="/kelpie-on-sheep-back.jpg",
         alt="A Kelpie herding sheep"
@@ -49,9 +49,9 @@ doc = html([
         p("Kelpies make great herding dogs for $animal.")
         for animal in ["cows", "sheep", "chickens"]
       ]...,
-    ]),
-  ]),
-])
+    ),
+  ),
+)
 
 prettyprint(doc)
 ```
