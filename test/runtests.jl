@@ -235,4 +235,9 @@ end #function
         @test prettystring(bootstrap_kelpie) == bootstrap_starter()
         @test prettystring(foundation_kelpie) == foundation_template()
     end #testset
+
+    @testset "Behaviors" begin
+        # Test that attributes with underscores become attributes with dashes
+        @test occursin("<i data-tooltip=\"foo\"/>", prettystring(i(; data_tooltip="foo")))
+    end #testset
 end #testset
