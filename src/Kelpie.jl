@@ -126,13 +126,14 @@ function html_element(name::AbstractString, content...=nothing; kwargs...)
 end #function
 
 """
-    html(content...)
+    html(content...=nothing; kwargs...)
 
 Creates a new HTML document filled with `content`.
 """
-function html(content...)
+function html(content...=nothing; kwargs...)
     doc = EzXML.HTMLDocumentNode("about:legacy-compat", nothing)
-    link_or_text!(doc, content...)
+    node = html_element("html", content...; kwargs...)
+    link!(doc, node)
     return doc
 end #function
 
