@@ -103,7 +103,7 @@ specified by `kwargs`.
 
 # Example
 
-```
+```jldoctest
 julia> import EzXML: prettyprint
 
 julia> prettyprint(html_element("img"; src="https://millironx.com/images/charolette.jpg"))

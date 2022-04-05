@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Way more unit tests ([#4](https://github.com/MillironX/Kelpie.jl/pull/4))
+
 ### Changed
 
 - Arrays of content replaced with argument splatting ([#2](https://github.com/MillironX/Kelpie.jl/pull/2))
