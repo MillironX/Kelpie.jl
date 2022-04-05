@@ -197,7 +197,42 @@ end #function
             );
             lang="en",
         )
+        foundation_kelpie = html(
+            head(
+                meta(; charset="utf-8"),
+                meta(; http_equiv="x-ua-compatible", content="ie=edge"),
+                meta(; name="viewport", content="width=device-width, initial-scale=1.0"),
+                title("Foundation Starter Template"),
+                link(;
+                    rel="stylesheet",
+                    href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css",
+                    crossorigin="anonymous",
+                ),
+            ),
+            body(
+                h1("Hello, world!"),
+                script(
+                    "";
+                    src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js",
+                    crossorigin="anonymous",
+                ),
+                script(
+                    "";
+                    src="https://cdn.jsdelivr.net/npm/what-input@5.2.10/dist/what-input.min.js",
+                    crossorigin="anonymous",
+                ),
+                script(
+                    "";
+                    src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js",
+                    crossorigin="anonymous",
+                ),
+                script("\$(document).foundation();"),
+            );
+            class="no-js",
+            lang="en",
+        )
 
         @test prettystring(bootstrap_kelpie) == bootstrap_starter()
+        @test prettystring(foundation_kelpie) == foundation_template()
     end #testset
 end #testset
