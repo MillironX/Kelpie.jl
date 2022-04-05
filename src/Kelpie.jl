@@ -83,10 +83,12 @@ julia> prettyprint(link_or_text!(ElementNode("div"), "The end", ElementNode("hr"
 """
 function link_or_text!(node, content...)
     for con in content
-        if typeof(con) <: EzXML.Node
-            link!(node, con)
-        else
-            link!(node, EzXML.TextNode(string(con)))
+        if !isnothing(con)
+            if typeof(con) <: EzXML.Node
+                link!(node, con)
+            else
+                link!(node, EzXML.TextNode(string(con)))
+            end #if
         end #if
     end #for
 
