@@ -161,7 +161,7 @@ for symbol in HTML_ELEMENTS
 end
 
 function html_div(content...=nothing; kwargs...)
-    return html_element("div", content; kwargs...)
+    return html_element("div", content...; kwargs...)
 end #function
 
 end #module
