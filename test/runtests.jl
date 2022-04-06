@@ -239,5 +239,15 @@ end #function
     @testset "Behaviors" begin
         # Test that attributes with underscores become attributes with dashes
         @test occursin("<i data-tooltip=\"foo\"/>", prettystring(i(; data_tooltip="foo")))
+
+        # Test that edge case functions can slurp their arguments
+        @test occursin(
+            """
+            <div>
+              <p>foo</p>
+              <p>bar</p>
+            </div>""",
+            prettystring(html_div(p("foo"), p("bar"))),
+        )
     end #testset
 end #testset
