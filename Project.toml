@@ -1,7 +1,7 @@
 name = "Kelpie"
 uuid = "1b112299-d6bc-44e2-912a-478f25731460"
 authors = ["Thomas A. Christensen II <25492070+MillironX@users.noreply.github.com> and contributors"]
-version = "0.2.0"
+version = "0.2.1"
 
 [deps]
 EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
